@@ -1,4 +1,6 @@
 /* CCS GENERAL DE ELEMENTOS */
+
+
 *{
     margin:0px;
     padding:0px;
@@ -19,6 +21,11 @@ h3{
     font-size:18px;
     font-weight:300;
 }
+
+section{
+    padding: 10px 100px 10px 100px;
+}
+
 p{
     text-align: justify;
 }
@@ -30,14 +37,26 @@ cite{
 i{
     font-size: 24px ;
 }
+/* 
+Selecciona cualquier elemento que coincida con :link o :visited 
+El que sea -moz o webkit solo es para compatibilidad de navegadores
+*/
+a:any-link{
+    color: white;
+}
+a:-moz-any-link{
+    color: white;
+}
+
+a:-webkit-any-link{
+    color: white;
+}
+
+
 /* CSS IDs y Clase */
 
 .hastag{
     color:#ffc900;
-}
-
-.seccion{
-    padding: 10px 100px 10px 100px;
 }
 
 #img-perfil{
@@ -45,12 +64,38 @@ i{
     border: 1px solid #ffc900;
 }
 
+/* ----SOCIAL MEDIA--------------------------------------------------------------------------------------------------- */
+/* ul */
+#social-media{
+    margin-top: 20PX;
+    list-style: none;
+    padding: 0;
+    font-size: 2em;
+}
+
+/* a */
+.social-media-icon{
+    width: 30px;
+    margin-right: 5px;
+    float: left;
+    transition: all .2s ease-in-out;
+}
+
+/*  a:hover */
+.social-media-icon:hover{
+    color: #ffc900;
+    transform: scale(1.5);
+    margin: 5px;
+}
+/* ------------------------------------------------------------------------------------------------------------------- */
+
 #inicio{
     background-image: url("../imagenes/inicio.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 280px;
 }
+
 #experiencia{
     background-color:white;
     color: #222;
@@ -58,5 +103,10 @@ i{
 #portfolio {
     border-top: 1px solid #ffc900;
 }
+
+
+
+
+
 
 
