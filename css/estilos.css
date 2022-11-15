@@ -22,6 +22,25 @@ h3{
     font-weight:300;
 }
 
+nav{
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background-color: #222;
+    border-bottom:  1px solid white;
+    padding-top: 10px;
+    text-align: center;
+}
+/* esta forma de nav ul es para hablarle de manera espeficica que afecte a tal etiqueta que tenga tal otra etiqueta */
+nav ul{
+    display: inline-block;
+}
+
+nav ul li{
+    padding-top: 12px;
+    
+}
+
 section{
     padding: 10px 100px 10px 100px;
 }
@@ -41,6 +60,15 @@ i{
 Selecciona cualquier elemento que coincida con :link o :visited 
 El que sea -moz o webkit solo es para compatibilidad de navegadores
 */
+a{ 
+    color: white;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+}
+
+
+
+
 a:any-link{
     color: white;
 }
@@ -52,6 +80,21 @@ a:-webkit-any-link{
     color: white;
 }
 
+a:hover{
+    font-size: 1.2em;
+    transform: scale(1.5);
+    color: #ffc900;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    float: left;
+    margin-right: 5px;
+}
+
 
 /* CSS IDs y Clase */
 
@@ -61,6 +104,11 @@ a:-webkit-any-link{
 
 #img-perfil{
     height: 250px;
+    border: 1px solid #222;
+    transition: all .5s ease-in-out;
+}
+
+#img-perfil:hover{
     border: 1px solid #ffc900;
 }
 
@@ -68,39 +116,42 @@ a:-webkit-any-link{
 /* ul */
 #social-media{
     margin-top: 20PX;
-    list-style: none;
     padding: 0;
     font-size: 2em;
 }
 
 /* a */
 .social-media-icon{
+    font-size: 0em;
     width: 30px;
     margin-right: 5px;
     float: left;
-    transition: all .2s ease-in-out;
 }
 
 /*  a:hover */
 .social-media-icon:hover{
-    color: #ffc900;
-    transform: scale(1.5);
+    font-size: 0em;
     margin: 5px;
 }
 /* ------------------------------------------------------------------------------------------------------------------- */
 
 #inicio{
+    padding-top: 75px;
     background-image: url("../imagenes/inicio.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 280px;
 }
 
+#logo{
+    padding-top: 0px;
+}
+
 #experiencia{
     background-color:white;
     color: #222;
 }
-#portfolio {
+#cualidades {
     border-top: 1px solid #ffc900;
 }
 
